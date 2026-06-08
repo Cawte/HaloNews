@@ -2,8 +2,8 @@ name: Halo News Bot
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # каждые 30 минут
-  workflow_dispatch:       # ручной запуск
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
 
 jobs:
   run-bot:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5  # обновлено с v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6  # обновлено с v5
         with:
           python-version: "3.11"
 
