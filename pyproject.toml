@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "halo-news-ai-bot-pro"
+version = "2.0.0"
+description = "Free-friendly Halo news aggregator, Telegram publisher, and visual editor."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12.3",
+  "feedparser>=6.0.11",
+  "lxml>=5.2.1",
+  "python-dotenv>=1.0.1",
+  "requests>=2.32.0",
+]
+
+[project.optional-dependencies]
+admin = ["streamlit>=1.35.0"]
+ai = ["openai>=1.55.0"]
+dev = ["pytest>=8.2.0"]
+
+[project.scripts]
+halo-news-bot = "halo_news_bot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

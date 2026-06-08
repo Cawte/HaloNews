@@ -1,0 +1,13 @@
+{
+  "last_run_at": null,
+  "published_by_day": {},
+  "seen_fingerprints": [],
+  "seen_titles": [],
+  "stats": {
+    "runs": 0,
+    "fetched": 0,
+    "queued": 0,
+    "published": 0,
+    "skipped": 0
+  }
+}
